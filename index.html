@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="icon" href="./img/guide.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js" type="module" defer></script>
+  </head>
+  <body class="scroll">
+    <main class="layout">
+      <section class="menu">
+        <article class="menu__info">
+          <div class="menu__info__avatar">
+            <img src="./img/hombre.png" alt="" />
+          </div>
+
+          <h3 class="menu__info__name">Pascualino</h3>
+          <p class="menu__info__position">Admin</p>
+        </article>
+
+        <nav>
+          <ul>
+            <li class="li--active">
+              <i class="bx bxs-dashboard"></i>
+              <a href="./pages/egreso.html">Dashboard</a>
+            </li>
+            <li>
+              <i class="bx bx-down-arrow-alt"></i>
+              <a href="./pages/ingreso.html">Ingreso</a>
+            </li>
+            <li>
+              <i class="bx bx-up-arrow-alt"></i>
+              <a href="./pages/egreso.html">Egreso</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="main">
+        <h2>Dashboard</h2>
+
+        <section class="dashboard">
+          <div class="dashboard__card">
+            <p>Total balance</p>
+            <p>$ 6904,666 USD</p>
+          </div>
+
+          <div class="myChart">
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <div class="dashboard__container">
+            <h3>Ingresos</h3>
+            <div class="dashboard__content scroll" id="income"></div>
+          </div>
+
+          <div class="dashboard__container">
+            <h3>Egresos</h3>
+            <div class="dashboard__content scroll" id="egress"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

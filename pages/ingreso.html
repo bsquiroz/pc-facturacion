@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - ingreso</title>
+    <link rel="icon" href="../img/guide.png" type="image/png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="./pages.js" defer></script>
+  </head>
+  <body>
+    <main class="layout">
+      <section class="menu">
+        <article class="menu__info">
+          <div class="menu__info__avatar">
+            <img src="../img/hombre.png" alt="" />
+          </div>
+
+          <h3 class="menu__info__name">Pascualino</h3>
+          <p class="menu__info__position">Admin</p>
+        </article>
+
+        <nav>
+          <ul>
+            <li>
+              <i class="bx bxs-dashboard"></i>
+              <a href="../index.html">Dashboard</a>
+            </li>
+            <li class="li--active">
+              <i class="bx bx-down-arrow-alt"></i>
+              <a href="./ingreso.html">Ingreso</a>
+            </li>
+            <li>
+              <i class="bx bx-up-arrow-alt"></i>
+              <a href="./egreso.html">Egreso</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="main">
+        <h2>Ingreso</h2>
+
+        <form class="form" id="formIncome">
+          <div class="form__row">
+            <div class="form__control">
+              <label for="name">Nombre del ingreso: </label>
+              <input id="name" type="text" placeholder="Ej: ingreso camisas" />
+            </div>
+
+            <div class="form__control">
+              <label for="nit">Nit: </label>
+              <input id="nit" type="number" placeholder="Ej: 1001505765" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__control">
+              <label for="value">Valor del ingreso: </label>
+              <input id="value" type="number" placeholder="Ej: 20 USD" />
+            </div>
+
+            <div class="form__control">
+              <label for="value">Valor del IVA: </label>
+              <input id="value" type="number" placeholder="Ej: 20" />
+            </div>
+          </div>
+
+          <div class="form__control">
+            <label for="date">Fecha del ingreso: </label>
+            <input id="date" type="date" />
+          </div>
+
+          <div class="form__control">
+            <label for="select">Tipo de ingreso: </label>
+            <select name="select" id="select">
+              <option value="" disabled selected>Seleccione una opción</option>
+              <option value="t1">tipo 1</option>
+              <option value="t2">tipo 2</option>
+              <option value="t3">tipo 3</option>
+              <option value="t4">tipo 4</option>
+            </select>
+          </div>
+
+          <div class="form__control">
+            <label for="textArea">Descripcion del ingreso: </label>
+            <textarea
+              name="textArea"
+              id="textArea"
+              placeholder="ej: este ingreso tiene..."
+            ></textarea>
+          </div>
+
+          <div class="form__control__check">
+            <input name="check" id="check" type="checkbox" />
+            <label for="check">Acepta terminos y condiciones</label>
+          </div>
+
+          <button class="btn--ingreso">Registrar ingreso</button>
+        </form>
+      </section>
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
